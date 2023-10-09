@@ -1,0 +1,20 @@
+/* section {
+     background-image: url('https://images.pexels.com/photos/696680/pexels-photo-696680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+} */
+
+.container {
+    margin-bottom: 175px;
+}
+
+.card {
+    background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+h2,
+label,
+h6 {
+    color: azure;
+}

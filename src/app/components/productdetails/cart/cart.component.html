@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row" *ngIf="length > 0">
+        <h1>Total Price- {{totalPrice}}</h1>
+    </div>
+    <div class="row py-5">
+        <div class="card" *ngIf="length > 0">
+            <div class="row py-1">
+                <h1>Shopping Cart</h1>
+            </div>
+            <hr />
+            <div class="row" *ngFor="let i of userCart">
+                <div class="col-4">
+                    <img src="{{ i.photo }}" class="img" alt="img not found" />
+                </div>
+                <div class="col-8">
+                    <h5>{{ i.title }}</h5>
+                    <p>{{ i.decsription }}</p>
+                    <p><strong>Price :</strong>{{ i.amount | currency : "INR" }}</p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <button class="btn btn-primay bg-danger" (click)="minus(i)">
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h1>{{ i.quantity }}</h1>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button class="btn btn-primay bg-primary" (click)="plus(i)">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-danger" (click)="remove(i.id)">
+                                Remove
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </div>
+            <h4 class="text-end">Subtotal({{ length }} items)</h4>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="card" *ngIf="length == 0">
+            <div class="row py-5">
+                <h1 class="text-center">Your Shopping Cart is empty.</h1>
+
+                <h1 class="text-end">Subtotal ({{ length }} items)</h1>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<div class="container-fluid">
+    <div class="row">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img [src]="'./assets/caru1.jpg'" class="d-block w-100 img" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img [src]="'./assets/caru2.jpg'" class="d-block w-100 img" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img [src]="'./assets/caru3.jpg'" class="d-block w-100 img" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+<!--  card Details -->
+ <!-- <div class="container">
+    <div class="row">
+        <div class="container py-5">
+            <div class="row">
+                <ng-container *ngFor="let i of productList">
+                    Apply custom CSS class to limit card width 
+                    <div class="card single-row-card">
+                        <img src="{{i.photo}}" alt="img not found">
+                        <h5>{{i.title}}</h5>
+                        <p>{{i.description}}</p>
+                        <p><strong>Amount : </strong>{{i.amount | currency:"INR"}}</p>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</div>  -->
+<button class="btn btn-warning" (click)="WarningToast()">Warning Toast</button>
+
+

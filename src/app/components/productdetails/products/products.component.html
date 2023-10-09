@@ -1,0 +1,13 @@
+<div class="container py-5">
+    <div class="row">
+        <ng-container *ngFor="let i of data">
+            <div class="card col-md-3">
+                <img src="{{i.photo}}" alt="img not found">
+                <h5>{{i.title}}</h5>
+                <p>{{i.decsription}}</p>
+                <p><strong>Amount : </strong>{{i.amount | currency:"INR"}}</p>
+                <button class="btn btn-dark" (click)="addToCart(i)">Add To Cart</button>
+            </div>
+        </ng-container>
+    </div>
+</div>

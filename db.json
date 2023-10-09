@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "photo": "https://m.media-amazon.com/images/I/811aBK9bUFL._AC_UY327_FMwebp_QL65_.jpg",
+      "title": "Laptop",
+      "decsription": "Lenovo IdeaPad Slim 3 Ryzen 5 7520U 15.6 (39.6cm)",
+      "amount": 55000,
+      "quantiy": 1
+    },
+    {
+      "id": 2,
+      "photo": "https://m.media-amazon.com/images/I/51PqaHZDiNL._AC_UY327_FMwebp_QL65_.jpg",
+      "title": "IKALL S1",
+      "decsription": " (6.8 Inch, 6GB, 128GB) (Triple Rear Camera) (Purple)",
+      "amount": 9700,
+      "quantiy": 1
+    },
+    {
+      "id": 3,
+      "photo": "https://m.media-amazon.com/images/I/61vmxtHv4IL._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "TShirt",
+      "decsription": "Ultra-soft - Our Pace collection is made from super combed cotton.",
+      "amount": 500,
+      "quantiy": 1
+    },
+    {
+      "id": 4,
+      "photo": "https://m.media-amazon.com/images/I/61vmxtHv4IL._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "TShirt",
+      "decsription": "Ultra-soft - Our Pace collection is made from super combed.",
+      "amount": 500,
+      "quantiy": 1
+    },
+    {
+      "id": 5,
+      "photo": "https://m.media-amazon.com/images/I/51PqaHZDiNL._AC_UY327_FMwebp_QL65_.jpg",
+      "title": "IKALL S1",
+      "decsription": " (6.8 Inch, 6GB, 128GB) (Triple Rear Camera) (Purple)",
+      "amount": 9700,
+      "quantiy": 1
+    },
+    {
+      "id": 6,
+      "photo": "https://m.media-amazon.com/images/I/811aBK9bUFL._AC_UY327_FMwebp_QL65_.jpg",
+      "title": "Laptop",
+      "decsription": "Lenovo IdeaPad Slim 3 Ryzen 5 7520U 15.6 (39.6cm)",
+      "amount": 55000,
+      "quantiy": 1
+    }
+  ],
+  "users": [
+    {
+      "fullname": "Chinmay",
+      "email": "chinu@gmail.com",
+      "password": "chinu",
+      "contact": 8654,
+      "checkbox": true,
+      "cart": [
+        {
+          "id": 3,
+          "photo": "https://m.media-amazon.com/images/I/61vmxtHv4IL._AC_UL480_FMwebp_QL65_.jpg",
+          "title": "TShirt",
+          "decsription": "Ultra-soft - Our Pace collection is made from super combed cotton.",
+          "amount": 500,
+          "quantiy": 1
+        }
+      ],
+      "id": 1,
+      "totalAmount": null
+    },
+    {
+      "fullname": "Nitin imade",
+      "email": "a@gmail.com",
+      "password": "55555",
+      "contact": 45346,
+      "checkbox": true,
+      "cart": [],
+      "id": 2,
+      "totalAmount": null
+    },
+    {
+      "fullname": "Ashu",
+      "email": "ashu@gmail.com",
+      "password": "123",
+      "contact": 635666688,
+      "checkbox": true,
+      "cart": [
+        {
+          "id": 4,
+          "photo": "https://m.media-amazon.com/images/I/61vmxtHv4IL._AC_UL480_FMwebp_QL65_.jpg",
+          "title": "TShirt",
+          "decsription": "Ultra-soft - Our Pace collection is made from super combed.",
+          "amount": 500
+        }
+      ],
+      "id": 3
+    }
+  ]
+}

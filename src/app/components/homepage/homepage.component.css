@@ -1,0 +1,57 @@
+.img {
+    height: 500px;
+}
+
+/* Limit the height of images within cards */
+.card img {
+    max-height: 500px; /* Set a maximum height for the images */
+    width: auto; /* Maintain aspect ratio */
+    margin-bottom: 25px;
+    margin-left: 40px;
+}
+
+:root {
+    --page-margin: min(2rem, 5vw);
+    color: #444;
+}
+
+section {
+    display: grid;
+    grid-template-columns: var(--page-margin) [center-start] 1fr [center-end] var(--page-margin);
+
+    & > * {
+        grid-column: center;
+    }
+}
+
+.cards-wrapper {
+    grid-column: center-start / -1;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    padding-right: var(--page-margin);
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #d0f0ee;
+        color: #15928A;
+        font-size: 1.5rem;
+        height: 20rem;
+        min-width: 13rem;
+        position: relative;
+        margin: 30px;
+        padding: 20px;
+        min-width: 0;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+    }
+}
+

@@ -1,0 +1,63 @@
+<section>
+    <div class="container col-sm-4 py-5 align-center">
+        <form [formGroup]="signUpForm">
+            <div class="card">
+                <div class="card-header">
+                    <h2>SignUp</h2>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="fullname">Full Name :</label>
+                        <input type="text" name="fullname" class="form-control" formControlName="fullname"
+                            placeholder="Enter Fullname">
+                        <h6 class="text-danger"
+                            *ngIf="signUpForm.controls['fullname'].hasError('required') && signUpForm.controls['fullname'].touched">
+                            Please enter fullname</h6>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" name="email" class="form-control" formControlName="email"
+                            placeholder="Enter Email">
+                        <h6 class="text-danger"
+                            *ngIf="signUpForm.controls['email'].hasError('required') && signUpForm.controls['email'].touched">
+                            Please enter valid emailId</h6>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password :</label>
+                        <input type="password" name="password" class="form-control" formControlName="password"
+                            placeholder="Enter Password">
+                        <h6 class="text-danger"
+                            *ngIf="signUpForm.controls['password'].hasError('required') && signUpForm.controls['password'].touched">
+                            Please enter password</h6>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contact :</label>
+                        <input type="number" name="contact" class="form-control" formControlName="contact"
+                            placeholder="Enter Contact">
+                        <h6 class="text-danger"
+                            *ngIf="signUpForm.controls['contact'].hasError('required') && signUpForm.controls['contact'].touched">
+                            Please enter contact</h6>
+                    </div>
+                    <div class="checkbox py-2">
+                        <label><input type="checkbox" formControlName="checkbox"> I accept Term and conditions</label>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="submit" class="btn btn-success w-100"
+                                [disabled]="!signUpForm.valid" (click)="submit()">SignUp</button>
+                        </div>
+                        <div class="col-6">
+                            <button type="submit" class="btn btn-danger w-100">Reset</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h6 class="py-2">You have already an account? <a [routerLink]="['/shopping/logIn']">LogIn</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
